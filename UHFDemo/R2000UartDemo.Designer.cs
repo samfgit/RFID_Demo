@@ -512,6 +512,8 @@
             this.lxLedControl17 = new LxControl.LxLedControl();
             this.lxLedControl18 = new LxControl.LxLedControl();
             this.timerInventory = new System.Windows.Forms.Timer(this.components);
+            this.wantedPanel = new System.Windows.Forms.Panel();
+            this.wantedLabel = new System.Windows.Forms.Label();
             this.tabCtrMain.SuspendLayout();
             this.PagReaderSetting.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -630,6 +632,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl18)).BeginInit();
+            this.wantedPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCtrMain
@@ -2822,7 +2825,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.22422F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.77578F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 370F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 372F));
             this.tableLayoutPanel4.Controls.Add(this.panel9, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel8, 1, 0);
@@ -2841,9 +2844,9 @@
             this.panel9.Controls.Add(this.btGetClearBuffer);
             this.panel9.Controls.Add(this.btGetBuffer);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(631, 4);
+            this.panel9.Location = new System.Drawing.Point(629, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(365, 81);
+            this.panel9.Size = new System.Drawing.Size(367, 81);
             this.panel9.TabIndex = 1;
             // 
             // btClearBuffer
@@ -2902,7 +2905,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(308, 81);
+            this.panel10.Size = new System.Drawing.Size(307, 81);
             this.panel10.TabIndex = 0;
             // 
             // btBufferInventory
@@ -2944,9 +2947,9 @@
             this.panel8.Controls.Add(this.cbBufferWorkant2);
             this.panel8.Controls.Add(this.cbBufferWorkant3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(319, 4);
+            this.panel8.Location = new System.Drawing.Point(318, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(305, 81);
+            this.panel8.Size = new System.Drawing.Size(304, 81);
             this.panel8.TabIndex = 0;
             // 
             // cbBufferWorkant1
@@ -3542,7 +3545,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.20588F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.79412F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 317F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 320F));
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
@@ -3574,9 +3577,9 @@
             this.panel2.Controls.Add(this.label59);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(189, 5);
+            this.panel2.Location = new System.Drawing.Point(188, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(480, 76);
+            this.panel2.Size = new System.Drawing.Size(478, 76);
             this.panel2.TabIndex = 0;
             // 
             // txtDStay
@@ -3779,7 +3782,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(5, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(176, 76);
+            this.panel3.Size = new System.Drawing.Size(175, 76);
             this.panel3.TabIndex = 1;
             // 
             // btFastInventory
@@ -3801,9 +3804,9 @@
             this.panel4.Controls.Add(this.label73);
             this.panel4.Controls.Add(this.label72);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(677, 5);
+            this.panel4.Location = new System.Drawing.Point(674, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(312, 76);
+            this.panel4.Size = new System.Drawing.Size(315, 76);
             this.panel4.TabIndex = 2;
             // 
             // txtRepeat
@@ -4955,6 +4958,7 @@
             this.panel12.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel12.Controls.Add(this.backKimlikPanel);
             this.panel12.Controls.Add(this.kimlikFrontPanel);
+            this.panel12.Controls.Add(this.wantedPanel);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel12.Location = new System.Drawing.Point(3, 3);
             this.panel12.Name = "panel12";
@@ -5182,7 +5186,7 @@
             // wantedPicBox
             // 
             this.wantedPicBox.BackColor = System.Drawing.Color.Transparent;
-            this.wantedPicBox.BackgroundImage = global::UHFDemo.Properties.Resources.wanted;
+            this.wantedPicBox.BackgroundImage = global::UHFDemo.Properties.Resources.none;
             this.wantedPicBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.wantedPicBox.Location = new System.Drawing.Point(209, 261);
             this.wantedPicBox.Name = "wantedPicBox";
@@ -5190,6 +5194,7 @@
             this.wantedPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.wantedPicBox.TabIndex = 31;
             this.wantedPicBox.TabStop = false;
+            this.wantedPicBox.Visible = false;
             // 
             // seriLabel
             // 
@@ -6252,6 +6257,30 @@
             this.timerInventory.Interval = 500;
             this.timerInventory.Tick += new System.EventHandler(this.timerInventory_Tick);
             // 
+            // wantedPanel
+            // 
+            this.wantedPanel.BackColor = System.Drawing.Color.Red;
+            this.wantedPanel.Controls.Add(this.wantedLabel);
+            this.wantedPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wantedPanel.ForeColor = System.Drawing.Color.White;
+            this.wantedPanel.Location = new System.Drawing.Point(0, 0);
+            this.wantedPanel.Name = "wantedPanel";
+            this.wantedPanel.Size = new System.Drawing.Size(992, 512);
+            this.wantedPanel.TabIndex = 31;
+            this.wantedPanel.Visible = false;
+            // 
+            // wantedLabel
+            // 
+            this.wantedLabel.AutoSize = true;
+            this.wantedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wantedLabel.Location = new System.Drawing.Point(1, 493);
+            this.wantedLabel.Name = "wantedLabel";
+            this.wantedLabel.Size = new System.Drawing.Size(988, 17);
+            this.wantedLabel.TabIndex = 0;
+            this.wantedLabel.Text = "İlgili şahıs hakkında İstanbul 11. Ağır Ceza Mahkemesi\'nin 18.12.2013 gün ve 2013" +
+    "/4537 D. iş sayılı kararı ile yakalama emri mevcuttur.";
+            this.wantedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // R2000UartDemo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -6443,6 +6472,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl18)).EndInit();
+            this.wantedPanel.ResumeLayout(false);
+            this.wantedPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -6932,6 +6963,8 @@
         private System.Windows.Forms.ListView inventoryMsgsListView;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel wantedPanel;
+        private System.Windows.Forms.Label wantedLabel;
     }
 }
 

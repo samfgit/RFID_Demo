@@ -5249,12 +5249,14 @@ namespace UHFDemo
             // check if wanted
             if (!(Convert.ToInt32(Rows[rowInd].ItemArray[29]) > 0))
             {
-                wantedPicBox.Hide();
+                //wantedPicBox.Hide();
+                wantedPanel.Hide();
                 //panel12.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                wantedPicBox.Show();
+                //wantedPicBox.Show();
+                wantedPanel.Show();
                 //panel12.BackColor = Color.Red;
             }
             
